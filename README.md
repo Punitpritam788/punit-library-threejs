@@ -1,177 +1,200 @@
-Punit's Library | One Bookcase. Three Tiers.
-<p align="center">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES_Modules-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111" alt="JavaScript ES Modules"></a>
-  <a href="https://threejs.org/"><img src="https://img.shields.io/badge/Three.js-0.185.0-000000?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js 0.185.0"></a>
-  <img src="https://img.shields.io/badge/Rendering-WebGL-990000?style=for-the-badge" alt="WebGL">
-  <img src="https://img.shields.io/badge/Architecture-Single%20HTML%20File-6B4F3A?style=for-the-badge" alt="Single HTML file">
-  <img src="https://img.shields.io/badge/Build%20Step-Not%20Required-2E7D32?style=for-the-badge" alt="No build step required">
-</p>An interactive 3D portfolio built as a dark-walnut library. Instead of presenting projects as a conventional grid of cards, the experience invites visitors into a wooden study, where personal chapters, GitHub projects, manga and manhwa, games, and collectible objects live on three browsable shelves.
+<div align="center">
 
-Built with: HTML, CSS, JavaScript ES modules, and Three.js
-Creator: Punit Pritam Mohanty
-GitHub profile: github.com/Punitpritam788
-One Bookcase. Three Tiers. A portfolio you can explore.
+# Punit's Library
 
-Contents
-- What is this?
-- Highlights
-- Technology
-- Run locally
-- How to explore
-- Catalogue customization
-- Architecture and maintainer notes
-- Live data and fallbacks
-- Privacy and limitations
-- Troubleshooting
-- Before you publish changes
-- GitHub repository setup
-What is this?
-Punit's Library is a single-page, full-screen 3D portfolio and personal archive. The room itself is the navigation system: visitors begin with a ceiling-level introduction, move down to the walnut bookshelf, select individual volumes, and inspect their details on information panels inlaid into the wooden floorboards.
+**An interactive 3D personal archive built as a three-tier walnut library.**
 
-The catalogue combines professional work and personal interests. The three tiers are deliberately different, but share one interaction model:
-Tier	Collection	Included in the built-in catalogue
-01 - Projects & Chapters	Personal story and skills volumes, selected concepts, and curated GitHub repositories	30 volumes: 7 personal chapters, 2 concept projects, and 21 repository entries
-02 - Manga & Manhwa	Japanese manga and Korean manhwa, with separate reading directions	22 volumes
-03 - Games & Discs	PS5/PC game cases, artwork, spinning optical discs, and gaming collectibles	16 fallback titles
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Explore_the_Library-d8a94c?style=for-the-badge)](https://punitpritam788.github.io/punit-library-threejs/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-2f473b?style=for-the-badge&logo=github&logoColor=white)](https://punitpritam788.github.io/punit-library-threejs/)
+[![Three.js](https://img.shields.io/badge/Three.js-0.185.0-111111?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES_Modules-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)](https://developer.mozilla.org/docs/Web/JavaScript)
 
+*One Bookcase. Three Tiers. A portfolio you can explore.*
 
-The displayed counts can change after live GitHub or game-trend synchronization. The numbers above describe the embedded starting catalogue, not a permanently fixed online total.
-Highlights
-A 3D room, not a flat portfolio template
-- An original wooden study with a pitched ceiling, dark walnut surfaces, brass details, and a three-tier bookshelf.
-- A cinematic ceiling introduction that zooms into the bookshelf.
-- Three independently focusable shelves with horizontally browsable contents.
-- Individual books and game cases that can be pulled out and opened.
-- Clickable details and actions rendered directly onto the wooden floorboard texture.
-- A landscape-view suggestion on tall screens, with an option to continue in portrait.
-Tier 01 - Projects & personal chapters
-- Personal volumes describe background, skills, work experience, interests, and career direction.
-- Concept volumes introduce selected experiments and game ideas.
-- Curated GitHub repositories have individual shelf entries, repository links, and optional live-demo links.
-- The searchable repository directory provides a separate way to find projects.
-- GitHub synchronization can add public repositories and refresh their metadata.
-- Repository README text can be fetched to enrich descriptions when the shelf entry is opened.
-Tier 02 - Manga & manhwa
-- A catalogue of 22 manga/manhwa entries.
-- Filters for all titles, manga, and manhwa.
-- Cover artwork is looked up from public catalogue services when available.
-- Japanese manga use a right-to-left hinge and page direction; Korean manhwa use a left-to-right direction.
-- A book-cover animation and two-page spread preview demonstrate the appropriate reading direction.
-- Optional official reading links are shown separately from the preview.
-Important: the spread reader is a visual interaction preview with generated sample text. It does not contain scanned manga/manhwa pages and is not a full digital reading service.
-Tier 03 - Games, cases & collectibles
-- PS5 and PC categories with platform filters.
-- Detailed 3D game cases, cover artwork, spines, backs, manuals, and optical-disc labels.
-- A bookshelf presentation and a separate CD-carousel mode.
-- An animated disc-insertion sequence.
-- Three-dimensional gaming collectibles, including showcase objects such as a Cyberpunk-style relic, a CS2-inspired Karambit, and a Dota 2 Aegis.
-- A manual trend update that attempts to refresh game entries and artwork from public sources.
-Platform labels in the trend feed are best-effort classifications. They should not be treated as a verified compatibility or store-availability database.
-Technology
-Technology	Role
-HTML5	Semantic page structure, overlays, navigation controls, and modal interfaces
-CSS3	Walnut/brass visual system, responsive HUD, overlays, transitions, and reduced-motion rules
-JavaScript ES modules	Application state, catalogue parsing, user interaction, data fetching, and orchestration
-Three.js 0.185.0	WebGL scene, camera, room and shelf geometry, books, cases, collectibles, raycasting, and animation
-Canvas 2D	Procedural wood and cover textures, floorboard artwork, inlaid text, and texture composition
-Browser APIs	fetch, localStorage, Pointer Events, touch input, ResizeObserver, Clipboard API, and media queries
+</div>
 
+Punit's Library replaces the usual portfolio grid with an original, full-screen 3D wooden study. Enter the room, descend from a cinematic ceiling view, and browse a dark-walnut bookshelf containing projects, manga and manhwa, games, discs, and 3D collectibles.
 
-There is no framework runtime, bundler, package manifest, backend server, or required API key in this delivery.
-Run locally
-Requirements
-- A modern desktop or mobile browser with JavaScript ES modules, import maps, Canvas 2D, and WebGL support.
-- Hardware acceleration/WebGL enabled.
-- Internet access for the Three.js CDN and optional live repository, catalogue, image, and game-trend services.
-The room and its initial contents are generated from the embedded catalogue. If a remote data provider is unavailable, the built-in catalogue and available local cache are used. The Three.js module itself is loaded from a CDN, so the 3D scene still requires that dependency to be reachable.
-Start a local static server
-Place the HTML file in a folder, open a terminal in that folder, and run:
+The experience is implemented in a **single `index.html` file** with no framework, build step, package manifest, or backend.
+
+---
+
+## Explore the Library
+
+### Tier 01 — Projects & Chapters
+
+- 7 personal story and skills volumes
+- 2 concept and experiment volumes
+- 21 curated GitHub repositories
+- Project details, repository links, demos, and README summaries
+- A searchable GitHub repository directory
+- Optional live synchronization with public GitHub repository data
+
+### Tier 02 — Manga & Manhwa
+
+- 22 embedded catalogue entries
+- Separate Manga (RTL) and Manhwa (LTR) filters
+- Animated cover opening and directional two-page spread preview
+- AniList, Kitsu, and MyAnimeList/Jikan cover lookup fallbacks
+- Optional links to official publisher or reading pages
+
+> The spread reader is a visual preview using generated sample text. It does not contain scanned pages or provide a digital reading service.
+
+### Tier 03 — Games, Discs & Collectibles
+
+- 16 fallback PS5 and PC game cases
+- Platform and layout filters
+- Generated and remotely sourced cover artwork
+- Spinning optical discs and an animated disc-insertion sequence
+- PS5/PC bookshelf and CD-carousel modes
+- 3D collectibles, including Cyberpunk-style, CS2-inspired, and Dota-inspired showcase objects
+- Optional live trend refresh for PS5 and PC titles
+
+---
+
+## Highlights
+
+- Cinematic ceiling introduction that zooms into the bookshelf
+- Three independently focusable tiers
+- Pull-out, open, return, and close interactions for books and game cases
+- Horizontal shelf browsing with mouse, touch, or keyboard
+- Procedural walnut textures and wood surfaces rendered with Canvas 2D
+- Canvas-rendered floorboard details with clickable action regions
+- Responsive HUD for desktop and mobile layouts
+- Landscape guidance for narrow or tall screens
+- Reduced-motion support
+- Local cache and embedded fallbacks when live services are unavailable
+
+---
+
+## Live Links
+
+| Resource | Link |
+| --- | --- |
+| Live site | https://punitpritam788.github.io/punit-library-threejs/ |
+| Repository | https://github.com/Punitpritam788/punit-library-threejs |
+| GitHub profile | https://github.com/Punitpritam788 |
+
+---
+
+## Run Locally
+
+### Requirements
+
+- A modern desktop or mobile browser
+- JavaScript ES modules and WebGL support
+- Hardware acceleration enabled
+- Internet access for the Three.js CDN and optional live data providers
+
+### Start a static server
+
+From the repository root:
+
+```bash
 python -m http.server 8000
-On Windows, py -m http.server 8000 may be used instead.
+```
 
-Open the filename in your browser, for example:
-http://localhost:8000/punit_library_three_tier_walnut_bookshelf_documented.html
-Use an HTTP server rather than opening the file through file://; browser module and cross-origin behavior is more predictable when served locally.
-Deploy
-The app is a static page. For GitHub Pages, place the HTML file in the published root (or the selected Pages folder), rename it to index.html if you want it to load as the site's default page, and enable Pages for that branch/folder. No build command is required. Any other static host serving the file over HTTPS can be used as well.
-How to explore
-On-screen controls
-- Ceiling Intro - return to the opening camera view.
-- Bookshelf - show all three tiers.
-- 01 Projects / 02 Manga / 03 Games - focus one tier.
-- Floor Details - move to the wooden floorboard detail view.
-- Prev / Next - move between items in the active tier.
-- Pull / Open - pull a selected volume or case out, open it, and return it to the shelf through repeated activation.
-- Return - clear the current selection or return from floor details.
-- Sync - refresh public GitHub repository information.
-- Update Trends - try to refresh the PS5/PC game collection.
-- All GitHub Repos - open the searchable repository directory.
-- Insert Disc - play the game-disc insertion animation.
-The Tools group contains collection-specific filters and display modes. On smaller screens, the secondary controls can be expanded or collapsed.
-Mouse and touch
-Input	Action
-Click/tap a book or game case	Select it; click it again to return it
-Click/tap a 3D collectible	Select it for close inspection
-Drag horizontally across a shelf	Browse the shelf contents
-Drag a pulled-open case	Rotate the case
-Drag a selected collectible	Rotate the collectible
-Pinch or use the mouse wheel on a selected collectible	Zoom the collectible
-Swipe vertically or use the page wheel/trackpad	Move between ceiling, bookshelf, and floor
-Swipe in the spread reader	Turn the preview spread in the correct reading direction
+Windows users may also use:
 
+```bash
+py -m http.server 8000
+```
 
-Keyboard
-The page-level shortcuts are ignored while typing in an input or textarea, and modal-specific controls take priority.
-Key	Action
-← / →	Previous / next item in the active tier
-↑ / W	Move up through the room levels; when a tier is focused, move toward the previous tier first
-↓ / S	Move down through the room levels; when a tier is focused, move toward the next tier first
-PageUp / PageDown	Move one room level up/down
-F	Toggle Floor Details / Bookshelf
-C	Toggle Ceiling Intro / Bookshelf
-Enter / Space	Enter the library from the intro, or pull/open the current item
-Escape	Close the active modal/reader, return from floor details, clear a selection, or restore all tiers depending on the current state
+Then open:
 
+```text
+http://localhost:8000/
+```
 
-Catalogue customization
-The initial content is embedded in:
+Use a static HTTP server instead of opening `index.html` through `file://` so browser module and cross-origin behavior remain predictable.
+
+---
+
+## Controls
+
+### Mouse and touch
+
+| Action | Result |
+| --- | --- |
+| Click or tap an object | Select a book, case, or collectible |
+| Click or tap again | Return or clear the selection |
+| Drag horizontally across a shelf | Browse items |
+| Drag a pulled case or collectible | Rotate it |
+| Pinch or mouse wheel over a collectible | Zoom it |
+| Swipe vertically / use the wheel | Move between room levels |
+| Swipe in the manga reader | Turn the preview spread |
+
+### Keyboard
+
+| Key | Action |
+| --- | --- |
+| `←` / `→` | Previous / next item |
+| `↑` / `W` | Move up in the room |
+| `↓` / `S` | Move down in the room |
+| `PageUp` / `PageDown` | Change room level |
+| `F` | Toggle floor details |
+| `C` | Toggle the ceiling intro |
+| `Enter` / `Space` | Enter the library or pull/open an item |
+| `Escape` | Close overlays or clear the current selection |
+
+The on-screen HUD also provides direct controls for the ceiling, shelf tiers, floor details, item navigation, GitHub synchronization, trend updates, repository search, filters, and game-disc controls.
+
+---
+
+## Technology
+
+| Technology | Purpose |
+| --- | --- |
+| HTML5 | Page structure, overlays, controls, and dialogs |
+| CSS3 | Walnut/brass theme, responsive HUD, transitions, and reduced motion |
+| JavaScript ES Modules | State, catalogue, interaction, networking, and scene orchestration |
+| Three.js 0.185.0 | WebGL room, camera, geometry, raycasting, animation, and meshes |
+| Canvas 2D | Procedural wood textures, cover artwork, floorboard rendering, and actions |
+| Browser APIs | `fetch`, `localStorage`, Pointer Events, ResizeObserver, clipboard access, and media queries |
+
+There is no framework runtime, bundler, backend, or required API key.
+
+---
+
+## Catalogue Customization
+
+The starting catalogue is embedded in `index.html` inside:
+
+```html
 <script type="application/json" id="catalog-data">
-  { ... }
+  <!-- ... -->
 </script>
-Edit the JSON inside this element to change the starting catalogue. Keep the element ID and valid JSON syntax. Do not add JavaScript comments or trailing commas inside the JSON.
-Top-level catalogue keys
-Key	Type	Purpose
-personalBooks	Array	Personal story, skills, experience, and career volumes
-conceptBooks	Array	Selected project and concept chapters
-projectNotes	Object	Repository-specific display metadata, keyed by GitHub repository name
-projectOrder	Array of strings	Preferred order for the curated repository shelf
-mangaBooks	Array	Manga/manhwa metadata, identifiers, cover lookup fields, and reading direction
-gameData	Array	Fallback game catalogue, platform tags, links, and artwork information
+```
 
+Top-level keys include:
 
-Personal and concept books
-A typical personal/concept volume uses:
+| Key | Purpose |
+| --- | --- |
+| `personalBooks` | Personal story and skills volumes |
+| `conceptBooks` | Concept and experiment volumes |
+| `projectNotes` | Repository descriptions and optional demo URLs |
+| `projectOrder` | Preferred curated-repository order |
+| `mangaBooks` | Manga/manhwa metadata and reading direction |
+| `gameData` | Fallback PS5 and PC catalogue |
+
+Keep the JSON valid: do not add comments or trailing commas. Keep repository names in `projectOrder` aligned with `projectNotes` and GitHub's repository names.
+
+### Personal or concept volume
+
+```json
 {
   "title": "The Builder's Toolkit",
   "author": "Punit Pritam Mohanty",
   "genre": "craft",
   "series": "My Story",
-  "note": "A concise description displayed on the floorboard detail panel."
+  "note": "A concise description shown in the floorboard detail panel."
 }
-The title, author, series, and note are display fields. genre is descriptive metadata in the current catalogue; it is not a built-in shelf filter.
-Project notes and order
-Each projectNotes value is an array containing a preferred series label, description, and an optional demo URL:
-{
-  "my-project-repository": [
-    "Worlds & Play",
-    "A concise description of the project.",
-    "https://example.com/live-demo/"
-  ]
-}
-Add the corresponding repository name to projectOrder to control its position among the curated repositories. Keep the names aligned with the actual GitHub repository names. When live GitHub data is available, the app enriches matching entries and can append additional public, non-fork, non-archived repositories.
-Manga/manhwa entries
+```
+
+### Manga or manhwa volume
+
+```json
 {
   "title": "Example Series",
   "author": "Creator Name",
@@ -184,17 +207,31 @@ Manga/manhwa entries
   "spineColor": "#c86428",
   "h": 1.54,
   "d": 0.22,
-  "note": "A short description of the series.",
+  "note": "A short description.",
   "officialReadUrl": "https://example.com/official-series-page",
   "officialSource": "Official Publisher"
 }
-- format is descriptive (manga or manhwa).
-- rtl controls the cover hinge and spread navigation direction. Use true for right-to-left volumes and false for left-to-right volumes.
-- anilistId is used for an exact AniList lookup when present. Otherwise, search and optional country are used for title search. malId supports the Jikan/MyAnimeList fallback path.
-- spineColor is a fallback visual color.
-- h and d influence generated book proportions. The renderer clamps dimensions to safe shelf ranges, so extreme values will not be preserved exactly.
-- officialReadUrl and officialSource are optional links/labels; they do not supply content to the local spread preview.
-Game entries
+```
+
+Use `rtl: true` for manga-style right-to-left navigation and `rtl: false` for left-to-right manhwa-style navigation.
+
+### Project note
+
+```json
+{
+  "my-project-repository": [
+    "Worlds & Play",
+    "A concise description of the project.",
+    "https://example.com/live-demo/"
+  ]
+}
+```
+
+The third array element is an optional live-demo URL.
+
+### Game entry
+
+```json
 {
   "title": "Example Game",
   "tag": "PC · Steam",
@@ -209,88 +246,99 @@ Game entries
   "note": "A short description.",
   "source": "Steam"
 }
-- caseType should be ps5 or pc to participate in the built-in platform filters and styling.
-- title, tag, platform, accent, and note supply the visible case/detail content.
-- appId enables additional Steam artwork candidates.
-- cover and fallbackCover are image candidates.
-- store and optional psStore are outbound links.
-- source is a display/provenance label.
-Architecture and maintainer notes
-The application is delivered as one HTML file containing markup, CSS, JSON data, and a JavaScript module. The module intentionally does not export a public JavaScript API. The supported customization points are the embedded catalogue and the DOM controls described above; internal classes and functions are implementation details, not stable external contracts.
-Component	Responsibility
-#catalog-data	Local-first starting dataset
-UnifiedHouseLibrary	Three.js scene, camera, room/shelf construction, object state, raycasting, input, and animation
-FloorboardDetailRenderer	Canvas-based details and clickable action regions mapped onto the floorboard
-renderUnifiedUI(state)	Connects scene state to DOM controls, floating actions, modals, and floorboard content
-initialise()	Populates the room, wires controls, starts remote hydration, warms up rendering, and dismisses the loader
+```
 
+Use `caseType: "ps5"` or `caseType: "pc"`.
 
-Scene state model
-The UI callback receives a state object shaped like:
-{
-  viewMode: 'ceiling' | 'bookshelf' | 'floor',
-  tier: 0 | 1 | 2,
-  focusTier: 'all' | 0 | 1 | 2,
-  item: Object | null,
-  collectible: Object | null,
-  state: 'shelved' | 'pulled' | 'opened' | 'launching',
-  gamesMode: 'bookshelf' | 'carousel'
-}
-The selection lifecycle is shared by books and game cases: shelved → pulled → opened, with another activation returning the item to the shelf. Collectible selection is maintained separately so 3D objects can be rotated and zoomed without pretending they are book entries.
-Canvas floorboard actions
-The detail panel is drawn into a canvas texture rather than built from ordinary HTML buttons. Button labels and action regions are painted together; the renderer stores their corresponding UV hit areas. When the floorboard is clicked, the scene raycasts the surface and dispatches the callback for the matching region. Keep each button's onClick callback attached to its display specification when extending this renderer.
-Procedural layout and performance
-- Shelf placement variations use deterministic hashing so the same catalogue produces a repeatable arrangement.
-- The initial room is built from local data before network enrichment completes.
-- Remote image work uses a bounded concurrency pool; compact screens use lower texture/image settings than larger screens.
-- Renderer pixel ratio, texture scale, anisotropy, and shadow quality are adjusted using screen/device heuristics.
-- The initial loading process has an early-entry option and a 12-second cap while waiting for external asset tasks; remaining requests can continue updating the scene afterward.
-- prefers-reduced-motion disables selected nonessential motion effects and CSS transitions.
-Live data, external services, and fallbacks
-All external requests run in the visitor's browser against public endpoints. There is no API key or private credential embedded in the page.
-Feature	Sources used by the implementation	Fallback behavior
-GitHub projects	GitHub REST API for public repositories; raw GitHub README files for descriptions	Curated catalogue, then last locally cached repository snapshot
-Manga/manhwa covers	AniList GraphQL, followed by Kitsu and Jikan/MyAnimeList fallback lookups	Generated cover/spine artwork from the local entry
-PS5 trends	PlayStation Blog WordPress API, parsing a Top Downloads post	Embedded game catalogue or cached trend snapshot
-PC/Steam trends	Steam featured categories through public CORS proxies; CheapShark deals/game lookup	Embedded game catalogue or cached trend snapshot
-Game artwork	Steam and other image candidates supplied by the catalogue/data providers	Procedurally generated case artwork and textures
-Image resizing	wsrv.nl image proxy	Original image URL is also tried
+---
 
+## Live Data & Fallbacks
 
-Two browser localStorage keys are used for snapshots:
-- punit_library_gh_repos_v1 - GitHub repository data.
-- punit_library_trending_games_v1 - game trend data.
-The stored values include a savedAt timestamp, but the current code does not enforce a cache expiry period. Clear either key in browser storage to discard that snapshot and force the built-in/online fallback path on the next sync.
+Public data is requested from the visitor's browser. The page does not embed private credentials or API keys.
 
-Game-platform trend detection is heuristic. The app parses a PlayStation blog post and uses a curated cross-platform keyword pattern to classify some Steam titles. Results and store destinations can be incomplete or misclassified; verify platforms and store links independently before relying on them.
-Privacy and limitations
-- No account, sign-in, analytics SDK, or backend service is required by the supplied HTML.
-- Public repository and catalogue requests are made from the browser; the browser stores only the described repository/game snapshots in localStorage.
-- The Three.js engine is CDN-hosted, so an offline-first fully disconnected launch is not supported by the current import map.
-- Missing third-party artwork does not remove the local shelf entries, but the visual result may use generated fallback textures.
-- The experience requires WebGL; there is no static 2D scene fallback.
-- The spread reader is a directional UI preview, not an archive of copyrighted pages.
-- The current delivery does not include an automated test suite or build pipeline; browser/manual checks are required after changes.
-Troubleshooting
-Problem	Things to check
-Blank scene or module error	Serve over HTTP/HTTPS, confirm the Three.js CDN is reachable, enable hardware acceleration, and inspect the browser console for import/WebGL errors.
-Loader reports that the engine is taking too long	Check connectivity to the CDN and reload. A startup watchdog displays a reload option if the module does not boot in time.
-Books appear without remote covers	The local data loaded, but a cover provider, image host, or CORS proxy may be unavailable. Try syncing again later.
-GitHub list does not refresh	Use Sync GitHub. If the request fails, the app uses its cached snapshot or built-in catalogue. Clear punit_library_gh_repos_v1 to remove the saved snapshot.
-Game list appears unchanged	Use Update Trends. If providers are unavailable, the app uses cached trends or the embedded gameData. Clear punit_library_trending_games_v1 to remove the saved snapshot.
-Mobile shelves feel cramped	Use landscape orientation for the intended wide layout, or dismiss the suggestion and continue in portrait.
-A project has no live-demo action	Add a third URL element to its projectNotes entry or provide a valid repository homepage/GitHub Pages URL.
+| Feature | Provider | Fallback |
+| --- | --- | --- |
+| GitHub repositories | GitHub REST API and raw README files | Embedded catalogue and local cache |
+| Manga/manhwa covers | AniList, Kitsu, Jikan/MyAnimeList | Generated cover and spine artwork |
+| PS5 trends | PlayStation Blog WordPress API | Embedded catalogue and local cache |
+| PC/Steam trends | Steam and public deal/game services | Embedded catalogue and local cache |
+| Game artwork | Catalogue artwork candidates | Procedurally generated textures |
 
+Repository and trend snapshots are stored in browser `localStorage`:
 
-Before you publish changes
-1. Validate the JSON inside #catalog-data.
-2. Keep projectOrder entries aligned with actual repository names and projectNotes keys.
-3. Confirm every manga/manhwa has the correct rtl value and a valid optional official link.
-4. Use caseType: "ps5" or caseType: "pc" for game entries.
-5. Preserve the DOM IDs and data-* attributes used by the interaction wiring.
-6. Test a desktop landscape viewport and a mobile/touch viewport.
-7. Check the console and manually try one project, one manga/manhwa item, one game case, a collectible, floorboard actions, both modals, and the remote-sync fallback path.
-GitHub repository setup
+- `punit_library_gh_repos_v1`
+- `punit_library_trending_games_v1`
 
-The badge row at the top of this README reflects the implementation: HTML5, CSS3, JavaScript ES modules, Three.js 0.185.0, WebGL, a single HTML file, and no required build step. No license, deployment, CI, or automated-test badge is included because those statuses are not established by the supplied source.
+Clear these keys to discard saved snapshots and restore embedded/current on-demand data.
+
+Platform labels and trend classifications are heuristic, not a verified game compatibility or store-availability database.
+
+---
+
+## Architecture
+
+The app follows a state-driven single-file structure:
+
+| Component | Responsibility |
+| --- | --- |
+| `#catalog-data` | Embedded, local-first starting data |
+| `UnifiedHouseLibrary` | 3D scene, camera, room, shelves, raycasting, state, and animation |
+| `FloorboardDetailRenderer` | Canvas floorboard details and clickable action regions |
+| `renderUnifiedUI(state)` | DOM controls, floating actions, modals, and scene-state updates |
+| `initialise()` | Catalogue population, control wiring, live hydration, rendering, and loader dismissal |
+
+The selection lifecycle for books and cases is:
+
+```text
+shelved → pulled → opened
+```
+
+A later activation returns the item to the shelf. Collectible selection and carousel state are maintained separately.
+
+---
+
+## Privacy & Limitations
+
+- No account, sign-in, analytics SDK, or backend is required.
+- Public repository and catalogue requests are made from the browser.
+- The Three.js module is loaded from a CDN, so a fully offline launch is not currently supported.
+- Missing artwork is replaced with generated fallback textures.
+- WebGL is required; there is no static 2D scene fallback.
+- The manga/manhwa reader is not a copyrighted page archive.
+- This project does not currently include an automated test suite or build pipeline.
+
+---
+
+## Troubleshooting
+
+| Problem | Check |
+| --- | --- |
+| Blank scene or module error | Serve over HTTP/HTTPS, enable hardware acceleration, and inspect the browser console |
+| Loader takes too long | Confirm CDN connectivity and reload; the startup watchdog provides a reload option |
+| Missing remote covers | The embedded catalogue should remain visible; provider availability or CORS may be the issue |
+| GitHub repos do not refresh | Use **Sync GitHub** or clear `punit_library_gh_repos_v1` |
+| Trends do not update | Use **Update Trends** or clear `punit_library_trending_games_v1` |
+| Mobile shelf feels cramped | Switch to landscape or widen the browser window |
+| Project has no demo action | Add a third URL to its `projectNotes` entry |
+
+---
+
+## Publishing Checklist
+
+1. Validate JSON inside `#catalog-data`.
+2. Align `projectOrder`, `projectNotes`, and real GitHub repository names.
+3. Confirm Manga/Manhwa `rtl` values and official links.
+4. Use `caseType: "ps5"` or `caseType: "pc"` for game entries.
+5. Preserve DOM IDs and `data-*` attributes used by interaction code.
+6. Test desktop landscape and mobile/touch layouts.
+7. Test project, manga, game, collectible, floorboard, modal, and live-sync fallback paths.
+
+---
+
+<div align="center">
+
 Made with curiosity, code, and a little walnut polish.
+
+**Creator:** [Punit Pritam Mohanty](https://github.com/Punitpritam788)
+
+</div>
